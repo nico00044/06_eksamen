@@ -1,0 +1,89 @@
+.hero {
+  max-width: 1500px;
+  margin: auto;
+  height: 70svh; /*højde på billede*/
+  background-image: url(hero/ommighero.png);
+  background-size: cover;
+  background-position: 50% 52%; /*placering af billede*/
+  margin-bottom: 2rem;
+}
+
+.img1 {
+  width: 200px;
+  margin-left: 7rem;
+}
+
+/********OVERSIGT*******/
+.oversigt {
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr; /*brede/placering frem og tilbage */
+  grid-template-rows: 10px 80px auto 80px; /*højde/placering op og ned*/
+  margin-bottom: 1rem;
+}
+
+.bgbillede {
+  grid-column: 1/4; /*bestemme bredde på bgbillede*/
+  grid-row: 3/5; /*bestemme højde på bgbillede*/
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.oversigt_tekst {
+  grid-column: 2/3; /*bestemme bredde på bgbillede*/
+  grid-row: 2/4; /*bestemme højde på bgbillede*/
+}
+
+.oversigt_tekst {
+  background-color: #bad4d4;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.grid-1_1_1 {
+  margin-bottom: 25px;
+  margin-top: 20px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+/***COMPUTER***/
+@media (min-width: 600px) {
+  .hero {
+    max-width: 1500px;
+    margin: auto;
+    height: 82svh; /*højde på billede*/
+    background-image: url(hero/ommighero.png);
+    background-size: cover;
+    background-position: 50% 52%; /*placering af billede*/
+    margin-bottom: 2rem;
+  }
+
+  .grid-1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-right: -2rem;
+    margin-left: 9.2rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .oversigt {
+    grid-template-rows: 30px 80px 0.3fr 80px; /*højde/placering op og ned*/
+    margin-bottom: 2rem;
+  }
+
+  .grid-1_1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+
+  .img1 {
+    width: 300px;
+    margin-left: 12rem;
+  }
+}

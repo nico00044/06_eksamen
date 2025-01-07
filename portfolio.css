@@ -1,0 +1,40 @@
+.hero {
+  max-width: 1500px;
+  margin: auto;
+  height: 45svh; /*højde på billede*/
+  background-image: url(img/portfoliohero.png);
+  background-size: cover;
+  background-position: 50% 52%; /*placering af billede*/
+  margin-bottom: 2rem;
+}
+
+.str {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.knapimg {
+  margin: 0; /*blev påvirket af a i global*/
+}
+
+/***COMPUTER***/
+@media (min-width: 600px) {
+  .hero {
+    max-width: 1500px;
+    margin: auto;
+    height: 83svh; /*højde på billede*/
+    background-image: url(img/portfoliohero.png);
+    background-size: cover;
+    background-position: 50% 55%; /*placering af billede*/
+    margin-bottom: 2rem;
+  }
+
+  .grid-1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    justify-content: center;
+  }
+}

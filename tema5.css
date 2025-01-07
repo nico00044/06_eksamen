@@ -1,0 +1,68 @@
+.hero {
+  max-width: 1500px;
+  margin: auto;
+  height: 70svh; /*højde på billede*/
+  background-image: url(hero/tema5hero1.png);
+  background-size: cover;
+  background-position: 50% 52%; /*placering af billede*/
+  margin-bottom: 2rem;
+}
+
+.order {
+  order: -1;
+}
+
+.img1 {
+  width: 400px;
+  margin-left: 1.5rem;
+}
+
+.img2 {
+  width: 350px;
+  margin-left: 3rem;
+}
+
+.img3 {
+  width: 200px;
+  margin-left: 6.5rem;
+}
+
+/***COMPUTER***/
+@media (min-width: 600px) {
+  .grid-1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-right: 4rem;
+    margin-left: 4rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero {
+    max-width: 1500px;
+    margin: auto;
+    height: 83svh; /*højde på billede*/
+    background-image: url(hero/tema5hero1.png);
+    background-size: cover;
+    background-position: 50% 52%; /*placering af billede*/
+    margin-bottom: 2rem;
+  }
+
+  .img1 {
+    width: 670px;
+    margin-left: 4rem;
+  }
+
+  .img2 {
+    width: 600px;
+    margin-left: 1rem;
+  }
+
+  .img3 {
+    width: 234px;
+    margin-left: 13rem;
+  }
+}

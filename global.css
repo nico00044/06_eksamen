@@ -1,0 +1,350 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/*****GENERELT******/
+h1 {
+  text-align: center;
+  font-family: "Simonetta", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-family: "Simonetta", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 1rem;
+  margin-bottom: 0.2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+h3 {
+  text-align: center;
+  font-family: "Simonetta", serif;
+  font-weight: 600;
+  font-style: normal;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  text-align: center;
+  font-family: "Simonetta", serif;
+  font-weight: 600;
+  font-style: normal;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-family: "Hind Madurai", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+/***FARVER****/
+
+/***FONTS****/
+/* 
+.simonetta-regular {
+  font-family: "Simonetta", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.hind-madurai-regular {
+  font-family: "Hind Madurai", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+     */
+
+/***BODY****/
+body {
+  background-color: #e7d8c9;
+}
+
+/****MAIN****/
+.main {
+  max-width: 1500px;
+  margin-inline: 4rem;
+}
+
+/****FOOTER*****/
+.logo_footer {
+  width: 80%;
+}
+
+.footer {
+  color: #000;
+  background-color: #4e878c;
+  height: 300px;
+}
+.footer_section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0.5rem;
+  padding-top: 3rem;
+  color: #000;
+}
+
+.tekstfooter {
+  font-family: "Simonetta", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.grid_2 {
+  gap: 24px;
+  display: grid;
+}
+.fa-brands fa-instagram fa-lg {
+  color: black;
+}
+.grid_3 {
+  margin-right: 2rem;
+}
+
+/****DROPDOWN MENU****/
+.dropknap {
+  background-color: #bad4d4;
+  color: white; /*tekst farve*/
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-boks {
+  display: none; /*skjult indtil man holder mus over portfolio*/
+  position: absolute;
+  right: 0; /*tekst til højre*/
+  background-color: #bad4d4;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-boks a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-boks {
+  display: block;
+}
+.dropdown:hover .dropknap {
+  background-color: #bad4d4;
+}
+
+/***KNAP****/
+.knap {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4e878c;
+  color: #e8ebe4;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  font-family: "Simonetta", serif;
+  display: grid;
+  max-width: 190px; /*længden på knappen*/
+  margin-inline: auto;
+  text-align: center;
+  font-size: 20px;
+}
+
+.knap:hover {
+  background-color: #7da3a6;
+}
+
+/***MENU + BURGERMENU****/
+header {
+  position: sticky; /*bliver i toppen og følger med*/
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #bad4d4;
+  z-index: 100;
+  font-family: "Simonetta", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+
+/***COMPUTER***/
+@media (min-width: 800px) {
+  .logo img {
+    width: 100px;
+    height: 90px;
+  }
+  .logo2 {
+    display: none;
+  }
+
+  .grid_2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 35px;
+    padding-top: 17px;
+    align-items: center;
+  }
+  .footer_section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Simonetta", serif;
+    font-weight: 400;
+  }
+  .grid_3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-right: 10rem;
+  }
+
+  .logo_footer {
+    width: 40%;
+  }
+  .footer {
+    height: 200px;
+  }
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+  margin: 0 40px;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.menu a {
+  display: block;
+  padding: 10px;
+  color: #4e878c;
+  text-decoration: none;
+  transition: color 0.3s; /*hastighed på farveskift*/
+  font-size: 1.2rem;
+}
+
+.menu a:hover {
+  color: #e2e8dd;
+}
+
+.menu a.active {
+  color: #000022; /*Gør at der er streg - JavaScript*/
+}
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burger .line {
+  /*stregerne til burgermenuen*/
+  width: 100%;
+  height: 2px;
+  background-color: #000022;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+.burger {
+  display: none;
+}
+
+/*gav bedre mening med 800px*/
+@media screen and (max-width: 800px) {
+  .menu {
+    display: none;
+  }
+  .logo {
+    display: none;
+  }
+  .burger {
+    display: block;
+    position: absolute;
+    right: 16px;
+  }
+  nav {
+    justify-content: end;
+  }
+  header {
+    top: 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  .logo2 img {
+    width: 70px;
+    height: auto;
+  }
+
+  /*roterer så den står skråt*/
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  /*streg forsvinder når man trykker - opacity 0*/
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+  /*roterer så den står skråt*/
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
+  nav.active .menu {
+    display: block;
+    background-color: #bad4d4;
+    position: absolute;
+    top: 70px;
+    right: 0; /*holder til højre*/
+    width: 50%; /*størrelsen på boksen*/
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); /*skygge på burgerboksen*/
+    z-index: 100;
+  }
+
+  nav.active .menu li {
+    margin: 30px 20px;
+  }
+
+  nav.active .menu a {
+    font-size: 24px;
+  }
+}

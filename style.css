@@ -1,0 +1,59 @@
+/******/
+.hero {
+  max-width: 1500px;
+  margin: auto;
+  height: 40svh; /*højde på billede*/
+  background-image: url(hero/hero_forside1.webp);
+  background-size: cover;
+  background-position: 50% 50%; /*placering af billede*/
+  margin-bottom: 2rem;
+}
+
+.str {
+  width: 400px;
+  margin: 0 auto;
+}
+
+/*Hovereffekt*/
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 88.5%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #e6beaecd;
+}
+
+.str:hover .overlay {
+  opacity: 1;
+}
+
+@media (min-width: 600px) {
+  .grid-1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    justify-content: center;
+  }
+
+  .hero {
+    max-width: 1500px;
+    margin: auto;
+    height: 80svh; /*højde på billede*/
+    background-image: url(hero/hero_forside1.webp);
+    background-size: cover;
+    background-position: 50% 40%; /*placering af billede*/
+    margin-bottom: 2rem;
+  }
+
+  .str {
+    width: 550px;
+    margin: 0 auto;
+  }
+}

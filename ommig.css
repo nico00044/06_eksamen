@@ -2,7 +2,7 @@
   max-width: 1500px;
   margin: auto;
   height: 70svh; /*højde på billede*/
-  background-image: url(hero/ommighero.png);
+  background-image: url(hero/ommigheroweb.webp);
   background-size: cover;
   background-position: 50% 52%; /*placering af billede*/
   margin-bottom: 2rem;
@@ -53,7 +53,7 @@
     max-width: 1500px;
     margin: auto;
     height: 82svh; /*højde på billede*/
-    background-image: url(hero/ommighero.png);
+    background-image: url(hero/ommigheroweb.webp);
     background-size: cover;
     background-position: 50% 52%; /*placering af billede*/
     margin-bottom: 2rem;
